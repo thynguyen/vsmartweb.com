@@ -1,0 +1,26 @@
+<?php
+
+return array (
+  'Administrators' => 'Quản trị viên',
+  'ListAdmin' => 'Danh sách Admin',
+  'AddAdmin' => 'Thêm Admin',
+  'EditAdmin' => 'Sửa Admin [:name]',
+  'NamOfRole' => 'Tên của vai trò',
+  'Roles' => 'Vai trò',
+  'AddRole' => 'Thêm vai trò mới',
+  'EditRole' => 'Sửa vai trò [:name]',
+  'Level' => 'Cấp độ',
+  'NameMod' => 'Tên Module',
+  'View' => 'Xem',
+  'Add' => 'Thêm',
+  'Delete' => 'Xoá',
+  'NotActivated' => 'Không kích hoạt',
+  'DelRolesuccess' => 'Xoá thành công Vai trò <strong>[:name]</strong>',
+  'SuperAdminChangeAlert' => 'Bạn không được phép thay đổi quyền của thành viên này',
+  'NoUserFound' => 'User này không tồn tại',
+  'NoAccessAllowed' => 'Không được phép truy cập',
+  'NoModulesEnabled' => 'Không có module nào được kích hoạt',
+  'NameAlreadyExists' => 'Tên này đã tồn tại',
+  'NoResults' => 'Không tìm thấy kết quả phù hợp',
+  'NoRoleUser' => 'Chưa lựa chọn vai trò cho user này',
+);

@@ -1,0 +1,18 @@
+{
+    "name": "EmailMarketing",
+    "alias": "emailmarketing",
+    "description": "",
+    "author":"V-Smart Web",
+    "version":"1.0",
+    "keywords": [],
+    "funcmod":{},
+    "dataslug":[],
+    "type":"web",
+    "order": 0,
+    "providers": [
+        "Modules\\EmailMarketing\\Providers\\EmailMarketingServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

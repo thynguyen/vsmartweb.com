@@ -1,0 +1,29 @@
+{
+  "name": "vsmartweb",
+  "title": "Theme Default for CMS V-Smart Web",
+  "description": "VSWCMS Theme",
+  "author": "V-Smart Web",
+  "version": "1.0",
+  "type": "web",
+  "widgetgroup": [
+  	"menusite",
+    "menuuserweb",
+    "client-area",
+    "search",
+  	"header",
+    "home",
+  	"top",
+  	"left",
+  	"right",
+  	"bottom",
+    "bottom-home",
+    "headbottom",
+  	"footer1",
+    "footer2",
+  	"copyright",
+    "copyright-menu",
+  	"menumobile",
+  	"home"
+  ],
+  "parent": ""
+}

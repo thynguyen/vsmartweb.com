@@ -1,0 +1,16 @@
+@extends('layouts.master')
+@section('metatitle',$category->title)
+@section('breadcrumbs')
+{{Breadcrumbs::render('module_news_category',$category)}}
+@endsection
+@section('header')
+@livewireStyles
+@endsection
+@section('content')
+@include('layouts.flash-message')
+@livewire('listcatnews',['id'=>$category->id])
+@livewire('news',['area'=>'web','catid'=>$category->id])
+@endsection
+@section('footer')
+@livewireScripts
+@endsection

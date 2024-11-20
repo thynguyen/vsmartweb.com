@@ -1,0 +1,32 @@
+<?php
+use Core\Models\Slugs;
+if (AdminFunc::ReturnModule('$STUDLY_NAME$','active')==1) {
+	$alllang = LanguageFunc::GetAllLocale();
+	$sitemapmod = [];
+	if ($alllang) {
+		foreach ($alllang as $lang) {
+			Route::get('sitemap-$LOWER_NAME$-{'.$lang.'}.xml', function($lang)
+			{
+			    $sitemap_$LOWER_NAME$ = App::make("sitemap");
+			    $datamods = DB::table('vsw_'.$lang.'_$LOWER_NAME$')->where('active',1)->orderBy('created_at', 'desc')->get();
+
+			    foreach ($datamods as $data)
+			    {
+			    	$http = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')?"https://":"http://";
+			    	$slug = DB::table('vsw_slugs')->where('item_id',$data->id)->where('module','$STUDLY_NAME$')->where('locale',$lang)->pluck('slug')->first();
+					$data->link = $http.$_SERVER['HTTP_HOST'].'/'.AdminFunc::GetPrefixMod('$STUDLY_NAME$').'/'.$slug.'.html';
+					$linkimg = $link.$_SERVER['HTTP_HOST'].$data->image;
+					$images[] = [
+							'url' => $linkimg,
+							'title' => $data->title,
+							'caption' => $data->title
+						];
+			        $sitemap_$LOWER_NAME$->add($data->link, $data->updated_at, '0.8', 'daily',$images);
+			    }
+
+			    return $sitemap_$LOWER_NAME$->render('xml');
+			})->name('sitemap-$LOWER_NAME$-'.$lang);
+			$sitemapmod[] = 'sitemap-$LOWER_NAME$-'.$lang.'.xml';
+		}
+	}
+}

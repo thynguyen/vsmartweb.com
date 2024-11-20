@@ -1,0 +1,5 @@
+@include(CFglobal::cfn('theme').'::layouts.link')
+@include(CFglobal::cfn('theme').'::layouts.header')
+@ModuleLayout()
+@include(CFglobal::cfn('theme').'::layouts.footer')
+@include(CFglobal::cfn('theme').'::layouts.script')

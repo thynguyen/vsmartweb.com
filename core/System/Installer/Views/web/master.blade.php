@@ -1,0 +1,5 @@
+@include('installer::web.link')
+@include('installer::web.header')
+@yield('content')
+@include('installer::web.footer')
+@include('installer::web.script')

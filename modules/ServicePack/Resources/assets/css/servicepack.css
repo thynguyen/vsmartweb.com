@@ -1,0 +1,98 @@
+#servicepack .webpackage-plans {
+	position: relative;
+	background-color: #fff;
+	z-index: 1;
+	height: 100%;
+}
+#servicepack .webpackage-plans.active {
+    padding: 50px 30px !important;
+    margin-top: -25px;
+    z-index: 2;
+	background-color: #0d6efd!important;
+	color: #fff;
+}
+#servicepack .webpackage-plans .webpackage-plans-header {
+	padding-bottom: 10px;
+	margin-bottom: 15px;
+	border-bottom: 2px solid #eaedef;
+}
+#servicepack .webpackage-plans .webpackage-plans-header h5 {
+	position: relative;
+    font-size: 26px;
+    color: #3b566e;
+    font-weight: 500;
+    line-height: 25px;
+    display: grid;
+}
+#servicepack .webpackage-plans.active .webpackage-plans-header h5 {
+	color: #fff;
+}
+#servicepack .webpackage-plans .webpackage-plans-header h5 small {
+	display: block;
+    font-size: 16px;
+    font-weight: 100;
+    color: #919a9e;
+    margin-top: 2px;
+}
+#servicepack .webpackage-plans.active .webpackage-plans-header h5 small {
+	color: #fff;
+}
+#servicepack .webpackage-plans .webpackage-plans-header .webpackage-plans-price {
+    font-family: 'Heebo', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+#servicepack .webpackage-plans.active .webpackage-plans-header .webpackage-plans-price:before {
+	opacity: 0.15;
+}
+#servicepack .webpackage-plans .webpackage-plans-header .webpackage-plans-price small {
+    font-size: 13px;
+    color: #b1bcc1;
+    font-weight: 500;
+    text-align: right;
+}
+#servicepack .webpackage-plans.active .webpackage-plans-header .webpackage-plans-price small {
+	color: #fff;
+}
+#servicepack .webpackage-plans .webpackage-plans-content {
+	min-height: 250px;
+}
+#servicepack .webpackage-plans .webpackage-plans-content li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 0;
+}
+#servicepack .webpackage-plans .webpackage-plans-content li span {
+	font-weight: 700;
+	font-size: 13px;
+}
+#servicepack .webpackage-plans .webpackage-plans-content li.check i {
+	color: #3e81c8;
+}
+#servicepack .webpackage-plans .webpackage-plans-content li.cross i {
+	color: #f1695f;
+}
+#servicepack .webpackage-plans.active .webpackage-plans-content li.check i,
+#servicepack .webpackage-plans.active .webpackage-plans-content li.cross i {
+	color: #fff;
+}
+#servicepack .webpackage-plans .webpackage-plans-content li.cross span {
+	text-decoration: line-through;
+}
+#servicepack .webpackage-plans.active .popular {
+    position: absolute;
+    top: -14px;
+    width: 120px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    padding: 3px;
+    background-color: #dc3545;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 14px;
+}

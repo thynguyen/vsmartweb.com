@@ -1,0 +1,5 @@
+@include('pages::web.layouts.link')
+@include('layouts.header')
+@ModuleLayout()
+@include('layouts.footer')
+@include('pages::web.layouts.script')

@@ -1,0 +1,5 @@
+@extends(CFglobal::cfn('theme').'::errors.master')
+@section('errortitle','Error 404 - '.trans('Langcore::global.Error404'))
+@section('code', '404')
+@section('message', $exception->getMessage())
+@section('messageh', trans('Langcore::global.Error404Note'))

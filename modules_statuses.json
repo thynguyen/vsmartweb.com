@@ -1,0 +1,15 @@
+{
+    "Contact": true,
+    "Menus": true,
+    "Members": true,
+    "News": true,
+    "Pages": true,
+    "PriceList": true,
+    "Search": true,
+    "Sliders": true,
+    "Testimonials": false,
+    "EmailMarketing": true,
+    "InterfacePackage": true,
+    "ServicePack": true,
+    "DNSManager": true
+}

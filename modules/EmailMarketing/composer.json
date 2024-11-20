@@ -1,0 +1,26 @@
+{
+    "name": "vsmartweb/emailmarketing",
+    "description": "",
+    "authors": [
+        {
+            "name": "V-Smart Web",
+            "email": "info@vsmartweb.com"
+        }
+    ],
+    "require": {
+        "spatie/laravel-newsletter": "^4.8"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\EmailMarketing\\": ""
+        }
+    }
+}

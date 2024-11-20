@@ -1,0 +1,14 @@
+@extends('layouts.master')
+@section('metatitle',trans('Langcore::managercomment.ManagerCommnet'))
+@section('breadcrumbs')
+{{Breadcrumbs::render('admin_index_indexcomment')}}
+@endsection
+@section('header')
+@livewireStyles
+@endsection
+@section('content')
+@livewire('listcomment')
+@endsection
+@section('footer')
+@livewireScripts
+@endsection

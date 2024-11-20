@@ -1,0 +1,1 @@
+{!!Form::select('route', [''=>transmod('Menus::ChooseLink')]+$menus, $link, ['class' => 'form-control', 'id'=>'route','onchange'=>'getlinkmenu(this)'])!!}

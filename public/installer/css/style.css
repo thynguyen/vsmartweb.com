@@ -1,0 +1,204 @@
+body {
+  font-size: .875rem;
+
+  background-image: url(../../installer/img/wizard-v1.jpg);
+}
+
+.cover-container {
+  position: relative;;
+  max-width:75em;
+  padding: 50px 0;
+}
+
+.cover-container > div {
+  box-shadow: 0px 5px 9.5px 0.5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 5px 9.5px 0.5px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 5px 9.5px 0.5px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0px 5px 9.5px 0.5px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0px 5px 9.5px 0.5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+}
+
+.feather {
+  width: 16px;
+  height: 16px;
+  vertical-align: text-bottom;
+}
+
+/*
+ * Sidebar
+ */
+
+.sidebar {
+  /*position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;*/
+  z-index: 100; /* Behind the navbar */
+  padding: 0; /* Height of navbar */
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+
+@media (max-width: 767.98px) {
+  .sidebar {
+    top: 5rem;
+  }
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  /*height: 100vh;*/
+  padding-top: .5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+@supports ((position: -webkit-sticky) or (position: sticky)) {
+  .sidebar-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+}
+
+.sidebar .nav-link {
+  font-weight: 500;
+  color: #333;
+}
+
+.sidebar .nav-link .feather {
+  margin-right: 4px;
+  color: #999;
+}
+
+.sidebar .nav-link.active {
+  color: #007bff;
+}
+
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+  color: inherit;
+}
+
+.sidebar-heading {
+  font-size: .75rem;
+  text-transform: uppercase;
+}
+
+/*
+ * Navbar
+ */
+
+.navbar-brand {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, .25);
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+}
+
+.navbar .navbar-toggler {
+  top: .25rem;
+  right: 1rem;
+}
+
+.navbar .form-control {
+  padding: .75rem 1rem;
+  border-width: 0;
+  border-radius: 0;
+}
+
+.form-control-dark {
+  color: #fff;
+  background-color: rgba(255, 255, 255, .1);
+  border-color: rgba(255, 255, 255, .1);
+}
+
+.form-control-dark:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+}
+
+
+#sidebarMenu {
+  -webkit-border-top-left-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+#sidebarMenu:after {
+  position: absolute;
+  content: '';
+  width: 2px;
+  height: 100%;
+  background: #959595;
+  left: 35px;
+  top: 0;
+  z-index: 9;
+}
+#sidebarMenu .sidebar-sticky {
+  z-index: 10;
+}
+#sidebarMenu ul {
+  position: relative;
+  overflow: hidden;
+}
+#sidebarMenu li {
+  margin-bottom: 15px;
+  z-index: 10;
+}
+#sidebarMenu li a {
+  color: #494949;
+  text-decoration: none;
+}
+#sidebarMenu li:last-child {
+  margin-bottom: 0;
+}
+#sidebarMenu li span.step {
+  display: flex;
+  align-items: center;
+  margin: 0 15px;
+  text-transform: uppercase;
+}
+#sidebarMenu li.active span.step {
+  font-weight: 700;
+  background-color: #f87d10;
+  padding: 5px;
+  -webkit-border-radius: 50rem;
+  -moz-border-radius: 50rem;
+  border-radius: 50rem;
+}
+#sidebarMenu li span.step span.number {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  background-color: #959595;
+  border: 5px solid #f8f9fa;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+  margin-right: 15px;
+}
+#sidebarMenu li.active span.step span.number {
+  background-color: #f87d10;
+  width: 35px;
+  height: 35px;
+}
+.content-main {
+  -webkit-border-top-right-radius: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  -moz-border-radius-bottomright: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}

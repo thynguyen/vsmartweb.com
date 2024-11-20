@@ -1,0 +1,26 @@
+<?php
+
+return array (
+  'Administrators' => 'Administrators',
+  'ListAdmin' => 'Administrator list',
+  'AddAdmin' => 'Add Admin',
+  'EditAdmin' => 'Edit Admin [:name]',
+  'NamOfRole' => 'Name Of Role',
+  'Roles' => 'Roles',
+  'AddRole' => 'Add new roles',
+  'EditRole' => 'Edit [:name] role',
+  'Level' => 'Level',
+  'NameMod' => 'Module Name',
+  'View' => 'View',
+  'Add' => 'Add',
+  'Delete' => 'Delete',
+  'NotActivated' => 'Not activated',
+  'DelRolesuccess' => 'Successful delete <strong>[:name]</strong> role',
+  'SuperAdminChangeAlert' => 'You are not allowed to change this member\'s rights',
+  'NoUserFound' => 'This user does not exist',
+  'NoAccessAllowed' => 'No access allowed',
+  'NoModulesEnabled' => 'No modules are enabled',
+  'NameAlreadyExists' => 'This name already exists',
+  'NoResults' => 'No matching results were found',
+  'NoRoleUser' => 'No role has been selected for this user',
+);

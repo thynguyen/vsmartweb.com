@@ -1,0 +1,18 @@
+{
+    "name": "DNSManager",
+    "alias": "dnsmanager",
+    "description": "",
+    "author":"V-Smart Web",
+    "version":"1.0",
+    "keywords": [],
+    "funcmod":{"dnsmanager.web.main":"Main"},
+    "dataslug":[],
+    "type":"web",
+    "order": 0,
+    "providers": [
+        "Modules\\DNSManager\\Providers\\DNSManagerServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

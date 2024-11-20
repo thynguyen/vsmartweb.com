@@ -1,0 +1,12 @@
+@extends('layouts.master')
+@section('metatitle',AdminFunc::ReturnModule('$STUDLY_NAME$','title'))
+@section('breadcrumbs')
+{{Breadcrumbs::render('admin_$LOWER_NAME$_main')}}
+@endsection
+@section('header')
+@endsection
+@section('content')
+@include('layouts.flash-message')
+@endsection
+@section('footer')
+@endsection

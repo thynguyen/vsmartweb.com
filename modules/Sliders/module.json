@@ -1,0 +1,18 @@
+{
+    "name": "Sliders",
+    "alias": "sliders",
+    "description": "",
+    "author":"V-Smart Web",
+    "version":"1.0",
+    "keywords": [],
+    "funcmod":{},
+    "dataslug":[],
+    "type":"web",
+    "order": 0,
+    "providers": [
+        "Modules\\Sliders\\Providers\\SlidersServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

@@ -1,0 +1,28 @@
+<?php
+
+return array (
+  'MainThemes' => 'Interface',
+  'ManagerThemes' => 'Management interface',
+  'UploadThemes' => 'Upload Theme',
+  'ManagerWidget' => 'Management Widget',
+  'AddWidget' => 'Add Widget',
+  'EditWidget' => 'Edit Widget',
+  'WidgetGroup' => 'Group Widget',
+  'WidgetName' => 'Widget',
+  'WidgetType' => 'Widget type',
+  'SystemWidget' => 'System widget',
+  'Templates' => 'Templates',
+  'LocationDisplayed' => 'Location displayed',
+  'SuccessActiveTheme' => 'Successful activation of the interface [:theme]',
+  'SuccessDeleteTheme' => 'Successful delete of the interface [:theme]',
+  'SuccessUploadTheme' => 'Upload the interface successfully',
+  'SuccessAddWidget' => 'Successful Add Widget [:widget]',
+  'SuccessDelWidget' => 'Successful Delete Widget [:widget]',
+  'ErrorThemeAlreadyExists' => 'This interface already exists',
+  'ErrorUpThemeEmptyJson' => 'Upload file is not Interface',
+  'ErrorEmptyWidgetGroup' => 'The currently used interface does not contain any widget groups',
+  'LogUploadSuccessTheme' => '[:name] uploaded the ":title" interface successfully',
+  'LayoutSetup' => 'Layout setup',
+  'CustomID' => 'Custom ID',
+  'CustomClass' => 'Custom Class',
+);

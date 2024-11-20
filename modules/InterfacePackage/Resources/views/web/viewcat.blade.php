@@ -1,0 +1,14 @@
+@extends('layouts.master')
+@section('breadcrumbs')
+{{Breadcrumbs::render('module_interfacepackage_viewcat',$interfacecat)}}
+@endsection
+@section('header')
+@livewireStyles
+@endsection
+@section('content')
+@include('layouts.flash-message')
+@livewire('listinterfaces',['catid'=>$interfacecat->id])
+@endsection
+@section('footer')
+@livewireScripts
+@endsection

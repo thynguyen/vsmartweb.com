@@ -1,0 +1,22 @@
+{
+    "name": "InterfacePackage",
+    "alias": "interfacepackage",
+    "description": "",
+    "author":"V-Smart Web",
+    "version":"1.0",
+    "keywords": [],
+    "funcmod":{
+        "interfacepackage.web.main":"Main",
+        "interfacepackage.web.detail":"Detail",
+        "interfacepackage.web.viewcat":"View Cat"
+    },
+    "dataslug":[],
+    "type":"web",
+    "order": 0,
+    "providers": [
+        "Modules\\InterfacePackage\\Providers\\InterfacePackageServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

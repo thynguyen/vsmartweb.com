@@ -1,0 +1,102 @@
+<?php
+
+namespace $NAMESPACE$;
+
+use Illuminate\Support\Facades\Route;
+use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
+use File;
+use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
+
+class $CLASS$ extends ServiceProvider
+{
+    /**
+     * The module namespace to assume when generating URLs to actions.
+     *
+     * @var string
+     */
+    protected $moduleNamespace = '$MODULE_NAMESPACE$\$MODULE$\$CONTROLLER_NAMESPACE$';
+
+    /**
+     * Called before routes are registered.
+     *
+     * Register any model bindings or pattern based filters.
+     *
+     * @return void
+     */
+    public function boot()
+    {
+        parent::boot();
+    }
+
+    /**
+     * Define the routes for the application.
+     *
+     * @return void
+     */
+    public function map()
+    {
+        $this->mapApiRoutes();
+
+        $this->mapWebRoutes();
+
+        $this->mapAdminRoutes();
+
+        $this->mapSiteMapRoutes();
+    }
+
+    /**
+     * Define the "web" routes for the application.
+     *
+     * These routes all receive session state, CSRF protection, etc.
+     *
+     * Route::middleware('web')->namespace($this->moduleNamespace)->group(module_path('$MODULE$', '$WEB_ROUTES_PATH$'));
+     * @return void
+     */
+    protected function mapWebRoutes()
+    {
+        if (File::exists(module_path('$MODULE$', '$WEB_ROUTES_PATH$'))) {
+            Route::group(['prefix' => LaravelLocalization::setLocale(),'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath','theme:theme','CoreMW\RunWidget','CoreMW\CheckWebMod:$MODULE$','CoreMW\CloseSite']], function () {
+                Route::namespace($this->moduleNamespace)
+                    ->group(module_path('$MODULE$', '$WEB_ROUTES_PATH$'));
+            });
+        }
+    }
+
+    
+    protected function mapAdminRoutes()
+    {
+        if (File::exists(module_path('$MODULE$', '/Routes/admin.php'))) {
+            Route::group(['prefix' => LaravelLocalization::setLocale(),'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath','theme:admintheme','CoreMW\checkAdminLogin','CoreMW\CheckMod:$MODULE$']], function () {
+                Route::prefix(config('app.prefixadmin','admin'))
+                    ->namespace($this->moduleNamespace)
+                    ->group(module_path('$MODULE$', '/Routes/admin.php'));
+            });
+        }
+    }
+
+    protected function mapSiteMapRoutes()
+    {
+        if (File::exists(module_path('$MODULE$', '/Routes/sitemap.php'))) {
+            Route::middleware('web')
+                ->namespace($this->moduleNamespace)
+                ->group(module_path('$MODULE$', '/Routes/sitemap.php'));
+        }
+    }
+
+    /**
+     * Define the "api" routes for the application.
+     *
+     * These routes are typically stateless.
+     *
+     * @return void
+     */
+    protected function mapApiRoutes()
+    {
+        if (File::exists(module_path('$MODULE$', '$API_ROUTES_PATH$'))) {
+            Route::prefix('api')
+                ->middleware('api')
+                ->namespace($this->moduleNamespace)
+                ->group(module_path('$MODULE$', '$API_ROUTES_PATH$'));
+        }
+    }
+}

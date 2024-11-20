@@ -1,0 +1,26 @@
+<?php
+
+return array (
+  'News' => 'Tin tức',
+  'ListNews' => 'Danh sách bài viết',
+  'AddNew' => 'Thêm bài viết',
+  'CatalogNews' => 'Danh mục tin tức',
+  'AddCatalogNews' => 'Thêm danh mục',
+  'BackCatalogNews' => 'Trở lại danh mục tin',
+  'Catalogs' => 'Danh mục',
+  'BelongsToCatalog' => 'Thuộc danh mục',
+  'DisplayedOnPage' => 'Hiển thị trên một trang',
+  'ShowOnCatalog' => 'Hiển thị trên một danh mục',
+  'ViewAllNews' => 'Hiển thị tất cả',
+  'ViewListCat' => 'Hiển thị theo danh mục',
+  'ConfirmDelCat' => 'Danh mục sau khi xoá sẽ không thể khôi phục. Xác nhận xoá danh mục này?',
+  'CannotDelCat' => 'Danh mục này tồn tại danh mục con, không thể xoá!',
+  'ConfirmDelNew' => 'Bài viết sau khi xoá sẽ không thể khôi phuc, bạn xác nhận xoá bài viết này?',
+  'Detail' => 'Chi tiết',
+  'Tags' => 'Thẻ',
+  'PostedBy' => 'Đăng bởi',
+  'Views' => 'Lượt xem',
+  'Comments' => 'Bình luận',
+  'NumRowWidget' => 'Số bài hiển thị',
+  'ViewAll' => 'Xem tất cả',
+);

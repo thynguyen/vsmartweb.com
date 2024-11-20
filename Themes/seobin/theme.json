@@ -1,0 +1,30 @@
+{
+  "name": "seobin",
+  "title": "Theme Default for CMS V-Smart Web",
+  "description": "VSWCMS Theme",
+  "author": "V-Smart Web",
+  "version": "1.0",
+  "type": "web",
+  "widgetgroup": [
+    "hotlineheader",
+  	"menusite",
+    "search",
+  	"menucat",
+  	"header",
+    "header-home",
+  	"top",
+  	"left",
+  	"right",
+  	"bottom",
+    "bottom-home",
+    "headbottom",
+  	"footer1",
+    "footer2",
+  	"copyright",
+    "copyright-menu",
+  	"social",
+  	"menumobile",
+  	"home"
+  ],
+  "parent": ""
+}

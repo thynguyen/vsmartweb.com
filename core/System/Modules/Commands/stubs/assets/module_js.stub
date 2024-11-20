@@ -1,0 +1,3 @@
+<?php
+header('Content-type: text/js');
+include('$BASE_FILE$');

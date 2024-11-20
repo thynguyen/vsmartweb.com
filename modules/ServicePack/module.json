@@ -1,0 +1,22 @@
+{
+    "name": "ServicePack",
+    "alias": "servicepack",
+    "description": "",
+    "author":"V-Smart Web",
+    "version":"1.0",
+    "keywords": [],
+    "funcmod":{
+        "servicepack.web.main":"Main",
+        "servicepack.web.detail":"Detail",
+        "servicepack.web.order":"Order"
+    },
+    "dataslug":["ServicePack"],
+    "type":"web",
+    "order": 0,
+    "providers": [
+        "Modules\\ServicePack\\Providers\\ServicePackServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

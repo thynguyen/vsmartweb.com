@@ -1,0 +1,26 @@
+<?php
+
+return array (
+  'Config' => 'Config',
+  'config_site' => 'Config Site',
+  'config_global' => 'General configuration',
+  'EmptyWebsiteName' => 'No website name yet',
+  'EmptyWebsiteURL' => 'Site URL cannot be blank',
+  'ConfigModule' => 'Config module',
+  'ConfigDisplay' => 'Config display',
+  'MapDriver' => 'Map driver',
+  'SignUpAPI' => 'Sign up for the API',
+  'SiteLatitude' => 'Latitude',
+  'SiteLongitude' => 'Longitude',
+  'SiteClosureMode' => 'Site closure mode',
+  'CloseSite0' => 'Sites ordinary activities',
+  'CloseSite1' => 'Closing of the site only has access to the Supreme Administrative',
+  'CloseSite2' => 'Moderator\\\'s closing general site access',
+  'CloseSite3' => 'Close all of the site admin access',
+  'EnableLangURL' => 'Enable language on url',
+  'DisableLangURL' => 'Disable language on url',
+  'AdminPrefix' => 'Admin Prefix',
+  'Follow' => 'Follow',
+  'Update' => 'Update',
+  'CurrentVersion' => 'Current version',
+);

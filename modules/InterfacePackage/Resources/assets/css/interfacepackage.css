@@ -1,0 +1,13 @@
+#interfacepackage {}
+#interfacepackage .item-interface {}
+#interfacepackage .item-interface small.card-subtitle {}
+#interfacepackage .item-interface small.card-subtitle span {
+	position: relative;
+}
+#interfacepackage .item-interface small.card-subtitle span::before {
+	content: "|";
+	padding: 0 5px;
+}
+#interfacepackage .item-interface small.card-subtitle span:first-child::before {
+	display: none;
+}

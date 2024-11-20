@@ -1,0 +1,17 @@
+.set-default {
+	border: 0;
+	width: 100%;
+	background-color: transparent;
+	cursor: pointer;
+}
+.set-default i {
+	opacity: 0;
+	-webkit-transition:all 0.3s linear;
+	-moz-transition:all 0.3s linear;
+	-ms-transition:all 0.3s linear;
+	-o-transition:all 0.3s linear;
+	transition:all 0.3s linear;
+}
+.set-default:hover i {
+	opacity: 1;
+}

@@ -1,0 +1,16 @@
+<?php
+
+if (AdminFunc::ReturnModule('$STUDLY_NAME$','active')==1) {
+	if (CFglobal::cfn('moddefault') == '$STUDLY_NAME$') {
+		Route::get('', '$STUDLY_NAME$Controller@main')->name('indexhome');
+	}
+	Route::prefix(AdminFunc::GetPrefixMod('$STUDLY_NAME$'))->group(function(){
+		Route::name('$LOWER_NAME$.web.')->group(function () {
+			Route::get('', '$STUDLY_NAME$Controller@main')->name('main');
+		});
+	});
+	Breadcrumbs::for('module_$LOWER_NAME$_main', function ($trail) {
+	    $trail->parent('sitehome');
+	    $trail->push(AdminFunc::ReturnModule('$STUDLY_NAME$','title'), route('$LOWER_NAME$.web.main'),['background'=>AdminFunc::ReturnModule('$STUDLY_NAME$','bgmod')]);
+	});
+}

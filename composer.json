@@ -1,0 +1,140 @@
+{
+    "name": "laravel/laravel",
+    "type": "project",
+    "description": "The Laravel Framework.",
+    "keywords": [
+        "framework",
+        "laravel"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^7.2.5",
+        "alexpechkarev/google-maps": "^8.0",
+        "artesaos/seotools": "^0.19.0",
+        "beyondcode/laravel-dump-server": "^1.5",
+        "biscolab/laravel-recaptcha": "^4.2",
+        "botble/assets": "1.0.16",
+        "buglinjo/laravel-webp": "^2.0",
+        "cknow/laravel-money": "^6.0",
+        "cloudflare/sdk": "dev-master",
+        "cviebrock/eloquent-sluggable": "^8.0",
+        "dompdf/dompdf": "^0.8.6",
+        "donatello-za/rake-php-plus": "^1.0",
+        "fideloper/proxy": "^4.3",
+        "fruitcake/laravel-cors": "^2.2",
+        "guzzlehttp/guzzle": "^7.0.1",
+        "intervention/image": "^2.5",
+        "ixudra/curl": "^6.21",
+        "jorenvanhocht/laravel-share": "^3.3",
+        "krazydanny/laravel-repository": "^1.1",
+        "laravel/framework": "^8.0",
+        "laravel/legacy-factories": "^1.0",
+        "laravel/socialite": "^5.0",
+        "laravel/tinker": "^2.0",
+        "laravel/ui": "^3.0",
+        "laravelcollective/html": "^6.2",
+        "laravelium/sitemap": "^8.0",
+        "laravolt/avatar": "^4.0",
+        "livewire/livewire": "^2.2",
+        "maatwebsite/excel": "^3.1",
+        "matthiasmullie/minify": "^1.3",
+        "mcamara/laravel-localization": "^1.6",
+        "nexmo/laravel": "^2.3",
+        "nwidart/laravel-modules": "^7.2",
+        "orangehill/iseed": "^2.6",
+        "php-http/guzzle7-adapter": "^0.1.1",
+        "phpviet/laravel-omnipay": "^1.1",
+        "predis/predis": "^1.1",
+        "pusher/pusher-php-server": "^4.1",
+        "renatomarinho/laravel-page-speed": "^1.9",
+        "simplesoftwareio/simple-qrcode": "^3.0",
+        "spatie/laravel-activitylog": "^3.16",
+        "spatie/laravel-analytics": "^3.10",
+        "spatie/laravel-backup": "^6.11",
+        "spatie/laravel-cookie-consent": "^2.12",
+        "spatie/laravel-image-optimizer": "^1.6",
+        "spatie/laravel-searchable": "^1.7",
+        "staudenmeir/eloquent-eager-limit": "^1.6",
+        "symfony/yaml": "^5.1",
+        "tightenco/ziggy": "^0.9.4",
+        "vsmartweb/core": "*@dev",
+        "webup/laravel-sendinblue": "^3.1",
+        "wikimedia/composer-merge-plugin": "^2.0",
+        "yajra/laravel-datatables-oracle": "^9.11"
+    },
+    "require-dev": {
+        "facade/ignition": "^2.3.6",
+        "fzaninotto/faker": "^1.9.1",
+        "mockery/mockery": "^1.3.1",
+        "nunomaduro/collision": "^5.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "allow-plugins": {
+            "wikimedia/composer-merge-plugin": true,
+            "php-http/discovery": false
+        }
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        },
+        "merge-plugin": {
+            "include": [
+                "composer.local.json",
+                "modules/*/composer.json",
+                "core/composer.json"
+            ],
+            "require": [],
+            "recurse": true,
+            "replace": false,
+            "ignore-duplicates": false,
+            "merge-dev": true,
+            "merge-extra": false,
+            "merge-extra-deep": false,
+            "merge-scripts": false
+        }
+    },
+    "autoload": {
+        "files": [
+            "core/Helpers/support.php"
+        ],
+        "psr-4": {
+            "App\\": "app/",
+            "Modules\\": "modules/",
+            "Themes\\": "Themes/"
+        },
+        "classmap": [
+            "database/seeds",
+            "database/factories"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi"
+        ],
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "@php artisan key:generate --ansi"
+        ]
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "./core"
+        }
+    ]
+}

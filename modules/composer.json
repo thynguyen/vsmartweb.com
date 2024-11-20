@@ -1,0 +1,23 @@
+{
+    "name": "vsmartweb/modules",
+    "description": "Modules manager for CMS V-Smart Web",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "V-Smart Web",
+            "email": "vietgroup.biz@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": []
+    },
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": []
+        }
+    }
+}

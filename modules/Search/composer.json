@@ -1,0 +1,23 @@
+{
+    "name": "vsmartweb/search",
+    "description": "",
+    "authors": [
+        {
+            "name": "V-Smart Web",
+            "email": "info@vsmartweb.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Search\\": ""
+        }
+    }
+}

@@ -1,0 +1,971 @@
+{
+  "chat": [
+    {
+      "type": "checkbox",
+      "id": "chat-manual-init",
+      "title": "Khởi tạo thủ công",
+       "content": "Tắt tự động khởi chạy tiện ích trò chuyện. Khi cài đặt này được kích hoạt, bạn phải khởi tạo tiện ích trò chuyện thông qua mã ngắn WordPress hoặc API Javascript."
+    },
+    {
+      "type": "checkbox",
+      "id": "chat-login-init",
+      "title": "Khởi tạo đăng nhập",
+       "content": "Chỉ khởi tạo và hiển thị tiện ích trò chuyện khi người dùng đã đăng nhập."
+    },
+    {
+      "type": "checkbox",
+      "id": "init-dashboard",
+      "title": "Màn hình trang tổng quan",
+       "content": "Hiển thị trang tổng quan thay vì khu vực trò chuyện khi khởi chạy."
+    },
+    {
+      "type": "checkbox",
+      "id": "disable-dashboard",
+      "title": "Tắt hiển thị",
+       "content": "Tắt trang tổng quan và chỉ cho phép một cuộc trò chuyện cho mỗi người dùng."
+    },
+    {
+      "type": "checkbox",
+      "id": "chat-timetable-disable",
+      "title": "Ẩn trò chuyện ngoài giờ hành chính",
+       "content": "Tắt và ẩn tiện ích trò chuyện ngoài giờ hành chính đã lên lịch."
+    },
+    {
+      "type": "checkbox",
+      "id": "chat-offline-disable",
+      "title": "Ẩn trò chuyện nếu không có nhân viên trực tuyến",
+       "content": "Vô hiệu hóa và ẩn tiện ích trò chuyện nếu tất cả tác nhân ngoại tuyến."
+    },
+    {
+      "type": "checkbox",
+      "id": "front-auto-translations",
+      "title": "Dịch tự động",
+       "content": "Tự động dịch các phần tử văn bản của tiện ích trò chuyện để khớp với ngôn ngữ trình duyệt của người dùng."
+    },
+    {
+      "type": "checkbox",
+      "id": "auto-open",
+      "title": "Mở tự động",
+       "content": "Tự động mở cửa sổ trò chuyện khi nhận được tin nhắn mới."
+    },
+    {
+      "type": "checkbox",
+      "id": "disable-uploads",
+      "title": "Tắt tải lên",
+       "content": "Vô hiệu hóa khả năng tải tệp lên trong cuộc trò chuyện."
+    },
+    {
+      "type": "checkbox",
+      "id": "articles-active",
+      "title": "Các bài báo",
+       "content": "Hiển thị phần bài viết trong khu vực bảng điều khiển."
+    },
+    {
+      "type": "text",
+      "id": "articles-title",
+      "title": "Tiêu đề bài viết",
+       "content": "Đổi tên tiêu đề bảng lưu trữ Bài viết. Mặc định là 'Trung tâm trợ giúp'."
+    },
+    {
+      "type": "multi-input",
+      "id": "chat-timetable",
+      "title": "Tin nhắn thời gian biểu",
+      "content": "Hiển thị thông báo cho người dùng khi tin nhắn đầu tiên của họ được gửi ngoài giờ làm việc đã lên lịch hoặc tất cả tác nhân ngoại tuyến. Định dạng văn bản được hỗ trợ. Xem tài liệu để biết thêm chi tiết.",
+      "value": [
+        {
+          "type": "checkbox",
+          "id": "chat-timetable-active",
+          "title": "Hoạt động"
+        },
+        {
+          "type": "checkbox",
+          "id": "chat-timetable-hide",
+          "title": "Ẩn thời gian biểu"
+        },
+        {
+          "type": "text",
+          "id": "chat-timetable-title",
+          "title": "Tiêu đề"
+        },
+        {
+          "type": "textarea",
+          "id": "chat-timetable-msg",
+          "title": "Tin nhắn"
+        }
+      ]
+    },
+    {
+      "type": "multi-input",
+      "id": "privacy",
+      "title": "Thông báo về quyền riêng tư",
+      "content": "Hiển thị thông báo bảo mật bằng các nút Chấp nhận hoặc Từ chối. Người dùng phải nhấp vào Chấp nhận để bắt đầu sử dụng trò chuyện. Điều này hữu ích cho việc thực thi chính sách bảo mật và tuân thủ GDPR.",
+      "value": [
+        {
+          "type": "checkbox",
+          "id": "privacy-active",
+          "title": "Hoạt động"
+        },
+        {
+          "type": "text",
+          "id": "privacy-title",
+          "title": "Tiêu đề"
+        },
+        {
+          "type": "textarea",
+          "id": "privacy-msg",
+          "title": "Tin nhắn"
+        },
+        {
+          "type": "textarea",
+          "id": "privacy-msg-decline",
+          "title": "Tin nhắn bị từ chối"
+        },
+        {
+          "type": "text",
+          "id": "privacy-link",
+          "title": "Liên kết tùy chọn"
+        },
+        {
+          "type": "text",
+          "id": "privacy-link-text",
+          "title": "Tên liên kết"
+        },
+        {
+          "type": "text",
+          "id": "privacy-btn-approve",
+          "title": "Chấp nhận nội dung nút"
+        },
+        {
+          "type": "text",
+          "id": "privacy-btn-decline",
+          "title": "Văn bản nút từ chối"
+        }
+      ]
+    },
+    {
+      "type": "multi-input",
+      "id": "popup-message",
+      "title": "Thông báo bật lên",
+      "content": "Hiển thị thông báo bật lên tự động cho người dùng mới.",
+      "value": [
+        {
+          "type": "checkbox",
+          "id": "popup-active",
+          "title": "Hoạt động"
+        },
+        {
+          "type": "checkbox",
+          "id": "popup-mobile-hidden",
+          "title": "Ẩn trên thiết bị di động"
+        },
+        {
+          "type": "upload-image",
+          "id": "popup-image",
+          "title": "Ảnh hồ sơ"
+        },
+        {
+          "type": "text",
+          "id": "popup-title",
+          "title": "Tiêu đề"
+        },
+        {
+          "type": "textarea",
+          "id": "popup-msg",
+          "title": "Tin nhắn"
+        }
+      ]
+    },
+    {
+      "type": "multi-input",
+      "id": "welcome-message",
+      "title": "Tin nhắn chào mừng",
+      "content": "Hiển thị tin nhắn trò chuyện tự động cho người dùng mới. Định dạng văn bản được hỗ trợ. Xem tài liệu để biết thêm chi tiết.",
+      "value": [
+        {
+          "type": "checkbox",
+          "id": "welcome-active",
+          "title": "Hoạt động"
+        },
+        {
+          "type": "checkbox",
+          "id": "welcome-open",
+          "title": "Mở trò chuyện"
+        },
+        {
+          "type": "checkbox",
+          "id": "welcome-sound",
+          "title": "Âm thanh"
+        },
+        {
+          "type": "select",
+          "id": "welcome-trigger",
+          "title": "Kích hoạt",
+          "value": [
+            [ "load", "Khi tải trang" ],
+            [ "open", "Mở trò chuyện" ]
+          ]
+        },
+        {
+          "type": "number",
+          "id": "welcome-delay",
+          "title": "Độ trễ (mili giây)"
+        },
+        {
+          "type": "textarea",
+          "id": "welcome-msg",
+          "title": "Tin nhắn"
+        }
+      ]
+    },
+    {
+      "type": "multi-input",
+      "id": "follow-message",
+      "title": "Theo dõi tin nhắn",
+      "content": "Hiển thị thông báo yêu cầu email của người dùng nếu không có tác nhân nào trả lời trong vòng 15 giây hoặc tất cả tác nhân đang ngoại tuyến. Định dạng văn bản được hỗ trợ. Xem tài liệu để biết thêm chi tiết.",
+      "value": [
+        {
+          "type": "checkbox",
+          "id": "follow-active",
+          "title": "Hoạt động"
+        },
+        {
+          "type": "checkbox",
+          "id": "follow-name",
+          "title": "Bao gồm trường tên"
+        },
+        {
+          "type": "text",
+          "id": "follow-title",
+          "title": "Tiêu đề"
+        },
+        {
+          "type": "number",
+          "id": "follow-delay",
+          "title": "Độ trễ (mili giây)"
+        },
+        {
+          "type": "textarea",
+          "id": "follow-msg",
+          "title": "Tin nhắn"
+        },
+        {
+          "type": "textarea",
+          "id": "follow-success",
+          "title": "Thông báo thành công"
+        },
+        {
+          "type": "text",
+          "id": "follow-placeholder",
+          "title": "Văn bản giữ chỗ"
+        }
+      ]
+    },
+    {
+      "type": "multi-input",
+      "id": "close-message",
+      "title": "Đóng tin nhắn",
+      "content": "Gửi tin nhắn cho người sử dụng khi nhân viên lưu trữ cuộc trò chuyện.",
+      "value": [
+        {
+          "type": "checkbox",
+          "id": "close-active",
+          "title": "Hoạt động"
+        },
+        {
+          "type": "textarea",
+          "id": "close-msg",
+          "title": "Tin nhắn"
+        }
+      ]
+    }
+  ],
+  "notifications": [
+    {
+      "type": "select",
+      "id": "chat-sound",
+      "title": "Âm thanh",
+      "content": "Phát âm thanh khi người dùng nhận được tin nhắn đến hoặc gửi tin nhắn đi.",
+      "value": [
+         ["n", "Không có"],
+         ["a", "Tất cả thư"],
+         ["aa", "Luôn luôn là tất cả thư"],
+         ["i", "Chỉ tin nhắn đến"],
+         ["ia", "Chỉ tin nhắn luôn đến"]
+      ]
+    },
+    {
+      "type": "select",
+      "id": "chat-sound-admin",
+      "title": "Âm thanh cho quản trị viên",
+      "content": "Phát âm thanh khi nhân viên hỗ trợ nhận được tin nhắn đến hoặc gửi tin nhắn đi.",
+      "value": [
+         ["n", "Không có"],
+         ["a", "Tất cả thư"],
+         ["i", "Chỉ tin nhắn đến"],
+         ["c", "Chỉ các cuộc hội thoại đến"],
+         ["ic", "Cuộc hội thoại và tin nhắn đến"]
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "notify-agent-email",
+      "title": "Thông báo email đại lý",
+      "content": "Gửi email tới một đại lý khi người dùng trả lời và nhân viên ngoại tuyến. Một email sẽ tự động được gửi tới tất cả các đại lý cho các cuộc trò chuyện mới."
+    },
+    {
+      "type": "checkbox",
+      "id": "notify-user-email",
+      "title": "Thông báo qua email của người dùng",
+      "content": "Gửi email cho người dùng khi tác nhân trả lời và người dùng ngoại tuyến."
+    },
+    {
+      "type": "select",
+      "id": "desktop-notifications",
+      "title": "Thông báo trên màn hình",
+      "content": "Hiển thị thông báo trên màn hình khi nhận được tin nhắn mới.",
+      "value": [
+        [ "", "Vô hiệu hóa" ],
+        [ "all", "Người dùng và các đại lý" ],
+        [ "users", "Chỉ người dùng" ],
+        [ "agents", "Chỉ đại lý" ]
+      ]
+    },
+    {
+      "type": "select",
+      "id": "flash-notifications",
+      "title": "Thông báo flash",
+      "content": "Hiển thị thông báo tab trình duyệt khi nhận được tin nhắn mới.",
+      "value": [
+        [ "", "Vô hiệu hóa" ],
+        [ "all", "Người dùng và các đại lý" ],
+        [ "users", "Chỉ người dùng" ],
+        [ "agents", "Chỉ đại lý" ]
+      ]
+    },
+    {
+      "type": "multi-input",
+      "setting": "emails",
+      "id": "email-user",
+      "title": "Email thông báo của người dùng",
+       "content": "Mẫu email cho email thông báo được gửi đến người dùng khi một đại lý trả lời. Bạn có thể sử dụng văn bản, HTML và các trường hợp nhất sau: {recipient_name}, {sender_name}, {sender_profile_image}, {message}, {attachments}. ",
+      "value": [
+        {
+          "type": "text",
+          "id": "email-user-subject",
+          "title": "Chủ đề"
+        },
+        {
+          "type": "textarea",
+          "id": "email-user-content",
+          "title": "Nội dung"
+        }
+      ]
+    },
+    {
+      "type": "multi-input",
+      "setting": "emails",
+      "id": "email-agent",
+      "title": "Email thông báo của đại lý",
+       "content": "Mẫu email cho email thông báo được gửi tới một đại lý khi một người dùng gửi một thông điệp mới Bạn có thể sử dụng văn bản, HTML, và các lĩnh vực hợp sau đây: {recipient_name}, {sender_name}, {sender_profile_image}, {message}, {attachments}. ",
+      "value": [
+        {
+          "type": "text",
+          "id": "email-agent-subject",
+          "title": "Chủ đề"
+        },
+        {
+          "type": "textarea",
+          "id": "email-agent-content",
+          "title": "Nội dung"
+        }
+      ]
+    },
+    {
+      "type": "multi-input",
+      "id": "push-notifications",
+      "title": "Thông báo đẩy",
+      "content": "Bật thông báo đẩy cho khu vực quản trị. Xem tài liệu để biết thêm chi tiết.",
+      "value": [
+        {
+          "type": "checkbox",
+          "id": "push-notifications-active",
+          "title": "Hoạt động"
+        },
+        {
+          "type": "text",
+          "id": "push-notifications-id",
+          "title": "Instance ID"
+        },
+        {
+          "type": "password",
+          "id": "push-notifications-key",
+          "title": "Secret key"
+        }
+      ]
+    },
+    {
+      "type": "multi-input",
+      "id": "email-server",
+      "title": "Cài đặt email",
+      "content": "Thông tin máy chủ SMTP gửi đi.",
+      "value": [
+        {
+          "type": "text",
+          "id": "email-server-host",
+          "title": "Host"
+        },
+        {
+          "type": "text",
+          "id": "email-server-user",
+          "title": "Username"
+        },
+        {
+          "type": "password",
+          "id": "email-server-password",
+          "title": "Password"
+        },
+        {
+          "type": "number",
+          "id": "email-server-port",
+          "title": "Port"
+        },
+        {
+          "type": "text",
+          "id": "email-server-from",
+          "title": "Email người gửi"
+        },
+        {
+          "type": "text",
+          "id": "email-sender-name",
+          "title": "Tên người gửi"
+        }
+      ]
+    },
+    {
+      "type": "upload-image",
+      "id": "notifications-icon",
+      "title": "Biểu tượng thông báo",
+      "content": "Đặt biểu tượng thông báo mặc định. Biểu tượng sẽ được sử dụng làm hình ảnh hồ sơ nếu người dùng không có.",
+      "background-size": "auto 64px"
+    },
+    {
+      "type": "input-button",
+      "id": "test-email-user",
+      "title": "Kiểm tra email của người dùng",
+      "content": "Gửi email thông báo người dùng thử nghiệm để xác minh cài đặt email.",
+      "button-text": "Gửi email"
+    },
+    {
+      "type": "input-button",
+      "id": "test-email-agent",
+      "title": "Kiểm tra Email đại lý",
+      "content": "Gửi email thông báo của đại lý kiểm tra để xác minh cài đặt email.",
+      "button-text": "Gửi email"
+    }
+  ],
+  "users": [
+    {
+      "type": "checkbox",
+      "id": "visitors-registration",
+      "title": "Đăng ký tất cả khách truy cập",
+      "content": "Đăng ký tự động tất cả khách truy cập. Khi tùy chọn này không hoạt động, chỉ những khách bắt đầu trò chuyện mới được đăng ký."
+    },
+    {
+      "type": "select",
+      "id": "registration-required",
+      "title": "Yêu cầu đăng ký",
+      "content": "Yêu cầu người dùng đăng ký hoặc đăng nhập trước khi bắt đầu trò chuyện.",
+      "value": [
+        [ "", "Vô hiệu hóa" ],
+        [ "registration", "Mẫu đăng ký và đăng nhập" ],
+        [ "login", "Biểu mẫu đăng nhập" ]
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "registration-timetable",
+      "title": "Tắt đăng ký trong giờ hành chính",
+      "content": "Chỉ cho phép đăng ký ngoài giờ hành chính đã lên lịch."
+    },
+    {
+      "type": "checkbox",
+      "id": "registration-offline",
+      "title": "Tắt đăng ký nếu đại lý trực tuyến",
+      "content": "Chỉ cho phép đăng ký nếu tất cả các đại lý ngoại tuyến."
+    },
+    {
+      "type": "text",
+      "id": "registration-link",
+      "title": "Liên kết đăng ký",
+      "content": "Chuyển hướng người dùng đến liên kết đăng ký thay vì hiển thị biểu mẫu đăng ký."
+    },
+    {
+      "type": "multi-input",
+      "id": "registration",
+      "title": "Mẫu đăng ký",
+      "content": "Thông tin về biểu mẫu đăng ký của người dùng.",
+      "value": [
+        {
+          "type": "text",
+          "id": "registration-title",
+          "title": "Form title"
+        },
+        {
+          "type": "textarea",
+          "id": "registration-msg",
+          "title": "Form message"
+        },
+        {
+          "type": "textarea",
+          "id": "registration-success",
+          "title": "Thông báo thành công"
+        },
+        {
+          "type": "text",
+          "id": "registration-btn-text",
+          "title": "Văn bản nút"
+        },
+        {
+          "type": "text",
+          "id": "registration-terms-link",
+          "title": "Liên kết điều khoản"
+        },
+        {
+          "type": "text",
+          "id": "registration-privacy-link",
+          "title": "Liên kết bảo mật"
+        }
+      ]
+    },
+    {
+      "type": "multi-input",
+      "id": "login",
+      "title": "Biểu mẫu đăng nhập",
+      "content": "Thông tin biểu mẫu đăng nhập của người dùng.",
+      "value": [
+        {
+          "type": "text",
+          "id": "login-title",
+          "title": "Form title"
+        },
+        {
+          "type": "textarea",
+          "id": "login-msg",
+          "title": "Form message"
+        }
+      ]
+    },
+    {
+      "type": "multi-input",
+      "id": "registration-fields",
+      "title": "Các trường trong biểu mẫu đăng ký",
+      "content": "Chọn các trường để đưa vào biểu mẫu đăng ký. Các trường tên, email và mật khẩu đều được bao gồm theo mặc định.",
+      "value": [
+        {
+          "type": "checkbox",
+          "id": "reg-phone",
+          "title": "Điện thoại"
+        },
+        {
+          "type": "checkbox",
+          "id": "reg-city",
+          "title": "Thành phố"
+        },
+        {
+          "type": "checkbox",
+          "id": "reg-country",
+          "title": "Quốc gia"
+        },
+        {
+          "type": "checkbox",
+          "id": "reg-language",
+          "title": "Ngôn ngữ"
+        },
+        {
+          "type": "checkbox",
+          "id": "reg-birthday",
+          "title": "Ngày sinh"
+        },
+        {
+          "type": "checkbox",
+          "id": "reg-company",
+          "title": "Công ty"
+        },
+        {
+          "type": "checkbox",
+          "id": "reg-facebook",
+          "title": "Facebook"
+        },
+        {
+          "type": "checkbox",
+          "id": "reg-twitter",
+          "title": "Twitter"
+        },
+        {
+          "type": "checkbox",
+          "id": "reg-linkedin",
+          "title": "LinkedIn"
+        },
+        {
+          "type": "checkbox",
+          "id": "reg-website",
+          "title": "Website"
+        }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "registration-profile-img",
+      "title": "Bao gồm hình ảnh hồ sơ",
+      "content": "Bao gồm trường ảnh hồ sơ trong biểu mẫu đăng ký để cho phép người dùng tải lên ảnh hồ sơ."
+    },
+    {
+      "type": "checkbox",
+      "id": "registration-last-name",
+      "title": "Bao gồm họ",
+      "content": "Bao gồm trường họ trong biểu mẫu đăng ký."
+    },
+    {
+      "type": "checkbox",
+      "id": "registration-password",
+      "title": "Mật khẩu",
+      "content": "Bao gồm trường mật khẩu trong biểu mẫu đăng ký."
+    },
+    {
+      "type": "repeater",
+      "id": "user-additional-fields",
+      "title": "Trường tùy chỉnh",
+      "content": "Thêm trường tùy chỉnh vào chi tiết hồ sơ người dùng.",
+      "items": [
+        {
+          "type": "text",
+          "name": "Name",
+          "id": "extra-field-name"
+        },
+        {
+          "type": "text",
+          "name": "Slug",
+          "id": "extra-field-slug"
+        }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "registration-extra",
+      "title": "Bao gồm các trường tùy chỉnh",
+      "content": "Bao gồm các trường tùy chỉnh trong biểu mẫu đăng ký."
+    },
+    {
+      "type": "text",
+      "id": "visitor-prefix",
+      "title": "Tiền tố tên khách truy cập",
+      "content": "Đổi tên tiền tố tên khách truy cập. Mặc định là 'Người dùng'."
+    },
+    {
+      "type": "text",
+      "id": "bot-name",
+      "title": "Tên bot",
+      "content": "Đổi tên bot trò chuyện. Mặc định là 'Bot'."
+    },
+    {
+      "type": "upload-image",
+      "id": "bot-image",
+      "title": "Hình ảnh hồ sơ bot",
+      "content": "Đặt ảnh hồ sơ cho bot trò chuyện.",
+      "background-size": "auto 64px"
+    },
+    {
+      "type": "button",
+      "id": "delete-leads",
+      "title": "Xóa khách hàng tiềm năng",
+      "content": "Xóa tất cả khách hàng tiềm năng và tất cả các tin nhắn và cuộc trò chuyện được liên kết với họ.",
+      "button-text": "Xóa khách hàng tiềm năng",
+      "button-url": "#"
+    }
+  ],
+  "design": [
+    {
+      "type": "color",
+      "id": "color-1",
+      "title": "Màu chính",
+      "content": "Đặt màu chính của tiện ích trò chuyện."
+    },
+    {
+      "type": "color",
+      "id": "color-2",
+      "title": "Màu phụ",
+       "content": "Đặt màu phụ của tiện ích trò chuyện."
+    },
+    {
+      "type": "color",
+      "id": "color-3",
+      "title": "Màu bậc ba",
+      "content": "Đặt màu cấp ba của tiện ích trò chuyện."
+    },
+    {
+      "type": "select",
+      "id": "chat-position",
+      "title": "Vị trí Chat",
+       "content": "Đặt vị trí của tiện ích trò chuyện.",
+      "value": [
+        [ "right", "Phải" ],
+        [ "left", "Trái" ]
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "rtl",
+      "title": "RTL",
+      "content": "Kích hoạt bố cục đọc từ Phải sang Trái (RTL)."
+    },
+    {
+      "type": "checkbox",
+      "id": "show-header",
+      "title": "Hiển thị Header",
+      "content": "Hiển thị khung Header."
+    },
+    {
+      "type": "checkbox",
+      "id": "display-users-thumb",
+      "title": "Hiển thị hình ảnh hồ sơ của người dùng",
+      "content": "Hiển thị hình ảnh hồ sơ của người dùng trong cuộc trò chuyện."
+    },
+    {
+      "type": "checkbox",
+      "id": "hide-agents-thumb",
+      "title": "Ẩn hình ảnh hồ sơ của người đại diện",
+      "content": "Ẩn hình ảnh hồ sơ của đại lý trong cuộc trò chuyện."
+    },
+    {
+      "type": "text",
+      "id": "header-headline",
+      "title": "Tiêu đề đầu trang",
+      "content": "Thay đổi văn bản tiêu đề trong khu vực tiêu đề của tiện ích trò chuyện. Văn bản này sẽ được thay thế bằng tên của tác nhân khi câu trả lời đầu tiên được gửi. Mặc định là 'Trò chuyện trên bảng hỗ trợ'."
+    },
+    {
+      "type": "text",
+      "id": "header-msg",
+      "title": "Thông báo tiêu đề",
+      "content": "Thay đổi văn bản tin nhắn trong khu vực tiêu đề của tiện ích trò chuyện. Văn bản này sẽ được thay thế bằng dòng tiêu đề tác nhân sau khi câu trả lời đầu tiên được gửi."
+    },
+    {
+      "type": "select",
+      "id": "header-type",
+      "title": "Loại tiêu đề",
+      "content": "Đặt giao diện tiêu đề.",
+      "value": [
+        [ "agents", "Đại lý" ],
+        [ "brand", "Nhãn hiệu" ]
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "header-name",
+      "title": "Hiển thị tên người dùng trong tiêu đề",
+      "content": "Thay thế tiêu đề đầu trang bằng tên và họ của người dùng nếu có."
+    },
+    {
+      "type": "upload-image",
+      "id": "brand-img",
+      "title": "Hình ảnh thương hiệu Header",
+       "content": "Hiển thị hình ảnh thương hiệu trong vùng Header. Điều này chỉ áp dụng cho loại 'brand' header.",
+      "background-size": "auto 64px"
+    },
+    {
+      "type": "upload-image",
+      "id": "header-img",
+      "title": "Hình nền Header",
+       "content": "Áp dụng hình nền tùy chỉnh cho vùng Header."
+    },
+    {
+      "type": "upload-image",
+      "id": "chat-icon",
+      "title": "Biểu tượng nút trò chuyện",
+      "content": "Thay đổi hình ảnh nút trò chuyện.",
+      "background-size": "auto 64px"
+    },
+    {
+      "type": "text",
+      "id": "admin-title",
+      "title": "Chức danh quản trị viên",
+      "content": "Đặt tiêu đề của khu vực quản lý."
+    },
+    {
+      "type": "upload-image",
+      "id": "login-icon",
+      "title": "Admin login logo",
+      "content": "Thay thế logo trên trang đăng nhập quản trị.",
+      "background-size": "auto 64px"
+    }
+  ],
+  "miscellaneous": [
+    {
+      "type": "checkbox",
+      "id": "admin-auto-translations",
+      "title": "Dịch tự động khu vực quản trị",
+      "content": "Tự động dịch khu vực quản trị để khớp với ngôn ngữ của trình duyệt."
+    },
+    {
+      "type": "checkbox",
+      "id": "admin-auto-archive",
+      "title": "Tự động lưu trữ các cuộc hội thoại",
+      "content": "Tự động lưu trữ các cuộc hội thoại được đánh dấu là đã đọc mỗi 24 giờ"
+    },
+    {
+      "type": "timetable",
+      "id": "timetable",
+      "title": "Giờ làm việc đã lên lịch",
+      "content": "Đặt giờ làm việc mặc định cho thời điểm các tác nhân được hiển thị là có sẵn. Các cài đặt này cũng được sử dụng cho tất cả các cài đặt khác dựa vào giờ làm việc. Xem tài liệu để biết thêm chi tiết."
+    },
+    {
+      "type": "number",
+      "id": "timetable-utc",
+      "title": "Chênh lệch UTC",
+      "content": "Đặt chênh lệch giờ UTC của thời gian biểu giờ hành chính. Xem tài liệu để biết thêm chi tiết."
+    },
+    {
+      "type": "repeater",
+      "id": "departments",
+      "title": "Phòng ban",
+      "content": "Thêm và quản lý các bộ phận hỗ trợ bổ sung.",
+      "items": [
+        {
+          "type": "text",
+          "name": "Name",
+          "id": "department-name"
+        },
+        {
+          "type": "color-palette",
+          "name": "Color",
+          "id": "department-color"
+        },
+        {
+          "type": "upload-image",
+          "name": "Image",
+          "id": "department-image"
+        },
+        {
+          "type": "auto-id",
+          "id": "department-id"
+        }
+      ]
+    },
+    {
+      "type": "multi-input",
+      "id": "departments-settings",
+      "title": "Cài đặt phòng ban",
+      "content": "Quản lý cài đặt phòng ban tại đây. Xem tài liệu để biết thêm chi tiết.",
+      "value": [
+        {
+          "type": "checkbox",
+          "id": "departments-dashboard",
+          "title": "Hiển thị trong trang tổng quan"
+        },
+        {
+          "type": "checkbox",
+          "id": "departments-images",
+          "title": "Hiển thị hình ảnh"
+        },
+        {
+          "type": "text",
+          "id": "departments-label",
+          "title": "Nhãn"
+        },
+        {
+          "type": "text",
+          "id": "departments-single-label",
+          "title": "Một nhãn"
+        },
+        {
+          "type": "text",
+          "id": "departments-title",
+          "title": "Tiêu đề trang tổng quan"
+        }
+      ]
+    },
+    {
+      "type": "multi-input",
+      "id": "queue",
+      "title": "Hàng đợi",
+       "content": "Phân phối các cuộc trò chuyện một cách cân đối giữa các nhân viên và thông báo cho khách truy cập về vị trí của họ trong hàng đợi. Thời gian phản hồi là vài phút. Bạn có thể sử dụng các trường hợp nhất sau trong thông báo: {position}, {minutes}. Chúng sẽ được thay thế bằng các giá trị thực trong thời gian thực. Xem tài liệu để biết thêm chi tiết. ",
+      "value": [
+        {
+          "type": "checkbox",
+          "id": "queue-active",
+          "title": "Hoạt động"
+        },
+        {
+          "type": "number",
+          "id": "queue-concurrent-chats",
+          "title": "Cuộc trò chuyện đồng thời"
+        },
+        {
+          "type": "number",
+          "id": "queue-response-time",
+          "title": "Thời gian phản hồi"
+        },
+        {
+          "type": "textarea",
+          "id": "queue-message",
+          "title": "Tin nhắn"
+        },
+        {
+          "type": "textarea",
+          "id": "queue-message-success",
+          "title": "Lượt tin nhắn của bạn"
+        }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "routing",
+      "title": "Định tuyến",
+      "content": "Phân phối các cuộc trò chuyện một cách cân đối giữa các tác nhân và chặn một đại lý xem các cuộc trò chuyện của các tác nhân khác."
+    },
+    {
+      "type": "repeater",
+      "id": "saved-replies",
+      "title": "Câu trả lời đã lưu",
+      "content": "Thêm và quản lý các câu trả lời đã lưu mà tác nhân có thể sử dụng trong trình chỉnh sửa trò chuyện. Các câu trả lời đã lưu có thể được in bằng cách nhập # theo sau là tên câu trả lời cộng với dấu cách.",
+      "items": [
+        {
+          "type": "text",
+          "name": "Name",
+          "id": "reply-name"
+        },
+        {
+          "type": "text",
+          "name": "Text",
+          "id": "reply-text"
+        }
+      ]
+    },
+    {
+      "type": "repeater",
+      "setting": "rich-messages",
+      "id": "rich-messages",
+      "title": "Thông điệp phong phú",
+      "content": "Tin nhắn đa dạng thức là các đoạn mã có thể được sử dụng trong một tin nhắn trò chuyện. Chúng có thể chứa mã HTML và được hiển thị tự động trong cuộc trò chuyện. Có thể sử dụng các đoạn mã đa dạng thức theo cú pháp sau: [rich-message-name]. Có rất nhiều thông điệp phong phú được tích hợp sẵn để bạn lựa chọn. Hãy xem tài liệu để biết thêm chi tiết. ",
+      "items": [
+        {
+          "type": "text",
+          "name": "Name",
+          "id": "rich-message-name"
+        },
+        {
+          "type": "textarea",
+          "name": "Content",
+          "id": "rich-message-content"
+        }
+      ]
+    },
+    {
+      "type": "button",
+      "id": "system-requirements",
+      "title": "Yêu cầu hệ thống",
+      "content": "Kiểm tra cấu hình máy chủ và đảm bảo nó có tất cả các yêu cầu. Xem tài liệu để biết thêm chi tiết.",
+      "button-text": "Kiểm tra các yêu cầu",
+      "button-url": "#"
+    }
+  ]
+}

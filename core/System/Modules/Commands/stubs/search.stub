@@ -1,0 +1,12 @@
+<?php
+namespace $MODULE_NAMESPACE$\$STUDLY_NAME$;
+use Modules\$STUDLY_NAME$\Entities\$STUDLY_NAME$;
+use Modules\Search\ModuleModelSearchAspect;
+
+$searchmodule = $searchResults->registerModel($STUDLY_NAME$::class, function(ModuleModelSearchAspect $modelSearchAspect) {
+       $modelSearchAspect
+          ->addSearchableAttribute('title') 
+          ->addSearchableAttribute('description') 
+          ->addSearchableAttribute('content')
+          ->where('active', 1);
+});

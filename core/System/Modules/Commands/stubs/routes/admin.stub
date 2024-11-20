@@ -1,0 +1,10 @@
+<?php
+Route::prefix('$LOWER_NAME$')->group(function(){
+	Route::name('$LOWER_NAME$.admin.')->group(function () {
+		Route::get('', 'Admin$STUDLY_NAME$Controller@main')->name('main');
+	});
+});
+Breadcrumbs::for('admin_$LOWER_NAME$_main', function ($trail) {
+    $trail->parent('admin_dashboard');
+    $trail->push(AdminFunc::ReturnModule('$STUDLY_NAME$','title'), route('$LOWER_NAME$.admin.main'));
+});

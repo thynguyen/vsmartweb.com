@@ -1,0 +1,70 @@
+{
+    "name": "vsmartweb/core",
+    "description": "Core manager for CMS V-Smart Web",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "V-Smart Web",
+            "email": "info@vsmartweb.com"
+        }
+    ],
+    "require": {
+        "hassankhan/config": "^0.10.0"
+    },
+    "require-dev": {
+        "graham-campbell/testbench": "^5.5",
+        "phpunit/phpunit": "^9.0"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "suggest": {
+        "symfony/yaml": "Allows for parsing of YAML theme info and change log files"
+    },
+    "autoload": {
+        "psr-4": {
+            "Core\\":"/",
+            "CoreMW\\":"Middleware/",
+            "CoreLang\\":"Langs/",
+            "Vsw\\Config\\": "System/Config/",
+            "Vsw\\Language\\": "System/Language/",
+            "Vsw\\Permissions\\": "System/Permissions/",
+            "Vsw\\Modules\\": "System/Modules/",
+            "Vsw\\Themes\\": "System/Themes/",
+            "Vsw\\Comment\\": "System/ManagerComment/",
+            "Installer\\": "System/Installer/",
+            "Vsw\\Licenses\\": "System/Licenses/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Core\\Providers\\CkediterServiceProvider",
+                "Core\\Providers\\AdminFuncServiceProvider",
+                "Vsw\\Config\\Providers\\ConfigGlobal",
+                "Vsw\\Language\\Providers\\LanguageServiceProvider",
+                "Vsw\\Modules\\Providers\\ModulesServiceProvider",
+                "Vsw\\Themes\\Providers\\ThemesServiceProvider",
+                "Vsw\\Themes\\BreadcrumbsServiceProvider",
+                "Vsw\\Comment\\Providers\\CommentServiceProvider",
+                "Vsw\\Themes\\Providers\\ThemevelServiceProvider",
+                "Installer\\Providers\\InstallerServiceProvider",
+                "Vsw\\Licenses\\Providers\\LicensesServiceProvider"
+            ],
+            "aliases": {
+                "CKediter":"Core\\Facade\\CKedit",
+                "AdminFunc":"Core\\Facade\\AdminFunc",
+                "CFglobal":"Vsw\\Config\\Facade\\CFglobal",
+                "LanguageFunc":"Vsw\\Language\\Facade\\LanguageFunc",
+                "ModulesFunc":"Vsw\\Modules\\Facade\\ManagerModule",
+                "ThemesFunc":"Vsw\\Themes\\Facade\\ManagerTheme",
+                "Widget": "Vsw\\Themes\\Facade",
+                "AsyncWidget": "Vsw\\Themes\\AsyncFacade",
+                "Breadcrumbs": "Vsw\\Themes\\Facade\\Breadcrumbs",
+                "Comments": "Vsw\\Comment\\Facade\\CommentFunc",
+                "Theme": "Vsw\\Themes\\Facade\\Theme",
+                "UserSetting":"Modules\\UserConfig\\Facade\\UserSetting"
+            }
+        }
+    }
+}

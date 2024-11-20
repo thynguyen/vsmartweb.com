@@ -1,0 +1,28 @@
+<?php
+
+return array (
+  'Installer' => 'Installer',
+  'WelcomeDescription' => 'VSWCMS v2.0 installer',
+  'LicenseCode' => 'License Code',
+  'LicenseActive' => 'License active',
+  'LicenseNotWork' => 'License does not work',
+  'ServerRequirements' => 'Server Requirements',
+  'CheckPermissions' => 'Check Permissions',
+  'Database' => 'Database',
+  'DatabaseConnection' => 'Database Connection',
+  'DatabaseHost' => 'Database Host',
+  'DatabasePort' => 'Database Port',
+  'DatabaseName' => 'Database Name',
+  'DatabaseUsername' => 'Database Username',
+  'DatabasePassword' => 'Database Password',
+  'Connection' => 'Connection',
+  'ErrorConnectData' => 'Data connection error. Please check the information!',
+  'AppName' => 'App Name',
+  'AppEnvironment' => 'App Environment',
+  'AppDebug' => 'App Debug',
+  'AppLogLevel' => 'App Log Level',
+  'AppUrl' => 'AppUrl',
+  'AdminAccount' => 'Admin account',
+  'CompleteInstallation' => 'Complete installation',
+  'CompleteInstallationMess' => 'VSWCMS v2.0 Installer - INSTALLED successfully',
+);

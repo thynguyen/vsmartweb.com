@@ -1,0 +1,9 @@
+{
+  "name": "admindefault",
+  "title": "Theme Admin Default",
+  "description": "Theme Admin Default Of V-Smart Web Cms",
+  "author": "V-Smart Web",
+  "version": "1.0",
+  "type": "admin",
+  "parent": ""
+}

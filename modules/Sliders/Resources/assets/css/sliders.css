@@ -1,0 +1,6 @@
+#managerslider {}
+#managerslider .list-group {}
+#managerslider .list-group .title {
+	cursor: pointer;
+}
+#managerslider .list-group .button {}

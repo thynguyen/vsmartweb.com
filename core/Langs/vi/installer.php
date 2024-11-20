@@ -1,0 +1,28 @@
+<?php
+
+return array (
+  'Installer' => 'Trình cài đặt',
+  'WelcomeDescription' => 'Trình cài đặt VSWCMS v2.0',
+  'LicenseCode' => 'Mã bản quyền',
+  'LicenseActive' => 'Giấy phép hoạt động',
+  'LicenseNotWork' => 'Giấy phép không hoạt động',
+  'ServerRequirements' => 'Yêu cầu máy chủ',
+  'CheckPermissions' => 'Kiểm tra quyền',
+  'Database' => 'Cơ sở dữ liệu',
+  'DatabaseConnection' => 'Kết nối cơ sở dữ liệu',
+  'DatabaseHost' => 'Máy chủ cơ sở dữ liệu',
+  'DatabasePort' => 'Cổng kết nối',
+  'DatabaseName' => 'Tên cơ sở dữ liệu',
+  'DatabaseUsername' => 'Tên người dùng cơ sở dữ liệu',
+  'DatabasePassword' => 'Mật khẩu cơ sở dữ liệu',
+  'Connection' => 'Kết nối',
+  'ErrorConnectData' => 'Lỗi kết nối dữ liệu. Vui lòng kiểm tra lại thông tin!',
+  'AppName' => 'Tên ứng dụng',
+  'AppEnvironment' => 'Môi trường ứng dụng',
+  'AppDebug' => 'Gỡ lỗi ứng dụng',
+  'AppLogLevel' => 'Cấp độ nhật ký ứng dụng',
+  'AppUrl' => 'Url ứng dụng',
+  'AdminAccount' => 'Tài khoản Admin',
+  'CompleteInstallation' => 'Hoàn thành cài đặt',
+  'CompleteInstallationMess' => 'Trình cài đặt VSWCMS v2.0 - CÀI ĐẶT thành công vào',
+);

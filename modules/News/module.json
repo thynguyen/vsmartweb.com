@@ -1,0 +1,22 @@
+{
+    "name": "News",
+    "alias": "news",
+    "description": "",
+    "author":"V-Smart Web",
+    "version":"2.0",
+    "keywords": [],
+    "funcmod":{
+        "news.web.main":"Main",
+        "news.web.detail":"Detail",
+        "news.web.cat":"View Cat"
+    },
+    "dataslug":["News","CategoryNews"],
+    "type":"web",
+    "order": 0,
+    "providers": [
+        "Modules\\News\\Providers\\NewsServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

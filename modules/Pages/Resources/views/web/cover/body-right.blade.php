@@ -1,0 +1,18 @@
+@include('layouts.link')
+@include('layouts.header')
+<section id="content">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-9">
+				@WidgetPlace('header')
+				@yield('content')
+				@WidgetPlace('bottom')
+			</div>
+			<div class="col-sm-3">
+				@WidgetPlace('right')
+			</div>
+		</div>
+	</div>
+</section>
+@include('layouts.footer')
+@include('layouts.script')

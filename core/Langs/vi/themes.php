@@ -1,0 +1,28 @@
+<?php
+
+return array (
+  'MainThemes' => 'Giao diện',
+  'ManagerThemes' => 'Quản lý giao diện',
+  'UploadThemes' => 'Tải lên giao diện',
+  'ManagerWidget' => 'Quản lý Widget',
+  'AddWidget' => 'Thêm Widget',
+  'EditWidget' => 'Sửa Widget',
+  'WidgetGroup' => 'Nhóm Widget',
+  'WidgetName' => 'Widget',
+  'WidgetType' => 'Loại Widget',
+  'SystemWidget' => 'Widget hệ thống',
+  'Templates' => 'Kiểu giao diện',
+  'LocationDisplayed' => 'Vị trí hiển thị',
+  'SuccessActiveTheme' => 'Kích hoạt thành công giao diện [:theme]',
+  'SuccessDeleteTheme' => 'Xoá thành công giao diện [:theme]',
+  'SuccessUploadTheme' => 'Tải lên giao diện thành công',
+  'SuccessAddWidget' => 'Thêm thành công Widget [:widget]',
+  'SuccessDelWidget' => 'Xoá thành công Widget [:widget]',
+  'ErrorThemeAlreadyExists' => 'Giao diện này đã tồn tại',
+  'ErrorUpThemeEmptyJson' => 'File tải lên không phải là Giao diện',
+  'ErrorEmptyWidgetGroup' => 'Giao diện đang được sử dụng không chứa bất kỳ nhóm widget nào',
+  'LogUploadSuccessTheme' => '[:name] đã tải lên giao diện ":title" thành công',
+  'LayoutSetup' => 'Thiết lập layout',
+  'CustomID' => 'ID tùy chỉnh',
+  'CustomClass' => 'Class tuỳ chỉnh',
+);

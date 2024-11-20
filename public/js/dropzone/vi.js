@@ -1,0 +1,10 @@
+Dropzone.prototype.defaultOptions.dictDefaultMessage = "<i class='fas fa-cloud-upload-alt fa-2x text-info'></i> Kéo thả file hoặc nhấn vào đây để upload";
+Dropzone.prototype.defaultOptions.dictFallbackMessage = "Trình duyệt của bạn không hỗ trợ kéo và thả tập tin tải lên.";
+Dropzone.prototype.defaultOptions.dictFallbackText = "Vui lòng sử dụng mẫu dự phòng dưới đây để tải lên các tệp của bạn như trước đây.";
+Dropzone.prototype.defaultOptions.dictFileTooBig = "Tệp quá lớn ({{filesize}}MiB). Kích thước tệp tối đa: {{maxFilesize}}MiB.";
+Dropzone.prototype.defaultOptions.dictInvalidFileType = "Bạn không thể tải lên các tập tin loại này.";
+Dropzone.prototype.defaultOptions.dictResponseError = "Máy chủ đã trả lời bằng mã {{statusCode}}.";
+Dropzone.prototype.defaultOptions.dictCancelUpload = "Hủy tải lên";
+Dropzone.prototype.defaultOptions.dictCancelUploadConfirmation = "Bạn có chắc chắn muốn hủy tải lên?";
+Dropzone.prototype.defaultOptions.dictRemoveFile = "Xóa tập tin";
+Dropzone.prototype.defaultOptions.dictMaxFilesExceeded = "Bạn không thể tải lên bất kỳ tập tin nào nữa.";
